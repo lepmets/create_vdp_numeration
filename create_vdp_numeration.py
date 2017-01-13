@@ -17,18 +17,20 @@ try:
     csvfile.write('\n')
 
     # get user input for the number start and end of the sequence of numbers
-    start = int(input('Start of seq.: '))
-    end = int(input('End of seq.: '))
+    start = input('Start of seq.: ')
+    end = input('End of seq.: ')
 
     # loop from start to end number, write to file
     if start.isnumeric() and end.isnumeric():
-        for i in range(start, end + 1):
+        for i in range(int(start), int(end) + 1):
             csvfile.write(str(i) + '\n')
     else:
-        sys.exit('Must enter numbers for sequence')
+        print('Start and end must be numeric.')
     csvfile.close()
 
 except IOError as e:
-    sys.exit(str(e))
+    csvfile.write(str(e))
+    csvfile.close()
 except OSError as e:
-    sys.exit(str(e))
+    csvfile.write(str(e))
+    csvfile.close()
