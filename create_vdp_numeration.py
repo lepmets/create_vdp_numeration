@@ -1,11 +1,6 @@
-"""csv_numeration.py - create .csv file to be used with
+"""create_vdp_numeration.py - create .csv file to be used with
 Adobe InDesign "Data Merge" feature."""
 
-
-"""
-The purpose of this script is to create a file with a sequence of numbers
-required to be printed on a VDP print job.
-"""
 try:
     file_name = input('File name?: ')
     csvfile = open(file_name, 'w')
