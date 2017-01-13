@@ -1,4 +1,4 @@
-# csv_numeration
+# create_vdp_numeration.py
 Creates a .csv file that is meant to be used with Adobe InDesign's 'data merge' feature.
 
 * Enter file name
