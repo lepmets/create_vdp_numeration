@@ -1,5 +1,6 @@
 """create_vdp_numeration.py - create .csv file to be used with
 Adobe InDesign "Data Merge" feature."""
+# coding: utf-8
 
 import sys
 
