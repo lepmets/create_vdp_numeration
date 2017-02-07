@@ -2,6 +2,7 @@
 Adobe InDesign "Data Merge" feature."""
 
 import sys
+minimum_one_leading = True;
 
 try:
     file_name = input('File name?: ')
@@ -21,7 +22,7 @@ try:
     end = input('End of seq.: ')
 
     # leading - end number will be used to calculate leading zeros in the loop
-    if len(end) == len(start):
+    if len(end) == len(start) and minimum_one_leading:
         """ increase length with random character for a leading zero if
         start number and end number are of same length"""
         leading = len(end + 'd')
